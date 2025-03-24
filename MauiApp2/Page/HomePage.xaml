@@ -1,0 +1,154 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MauiApp2.ViewModel"
+             xmlns:model="clr-namespace:MauiApp2.Model"
+             x:DataType="viewmodel:HomeViewModel"
+             x:Class="MauiApp2.Page.HomePage"
+             Shell.NavBarIsVisible="False"
+             Title="Home"
+             BackgroundColor="Black">
+
+    <ContentPage.BindingContext>
+        <viewmodel:HomeViewModel/>
+    </ContentPage.BindingContext>
+
+
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="20"
+                             Spacing="15">
+
+
+            <!-- ส่วนแสดงข้อมูลโปรไฟล์ -->
+            <Frame Padding="15"
+       BackgroundColor="White"
+       HasShadow="True"
+       CornerRadius="15">
+    <VerticalStackLayout Spacing="10">
+        <Button Command="{Binding LogoutCommand}"
+                BackgroundColor="Red"
+                TextColor="White"
+                FontSize="14"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                WidthRequest="120"
+                HeightRequest="40"
+                BorderColor="Red"
+                
+                Margin="0,0,0,10"
+                Text="Logout" />
+
+        <Label Text="👤 Profile Information"
+               FontSize="22"
+               FontAttributes="Bold"
+               TextColor="#333"
+               HorizontalOptions="Center"/>
+
+        <Button Text="View Profile"
+                Command="{Binding NavigateToProfilePageCommand}"
+                BackgroundColor="#3498db"
+                TextColor="White"
+                CornerRadius="10"
+                FontSize="18"
+                FontAttributes="Bold"
+                HorizontalOptions="FillAndExpand"
+                Margin="0,10"/>
+    </VerticalStackLayout>
+</Frame>
+
+
+
+
+
+            <!-- ปุ่มเปลี่ยนเทอม -->
+            <Frame CornerRadius="15"
+                   Padding="15"
+                   BackgroundColor="White"
+                   HasShadow="True">
+                <VerticalStackLayout>
+                    <Label Text="📅 Select Term"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#333"
+                           HorizontalOptions="Center"/>
+
+                    <HorizontalStackLayout HorizontalOptions="Center"
+                                           Spacing="10">
+                        <Button Text="Term 1"
+                                Command="{Binding ChangeTermCommand}"
+                                CommandParameter="Term 1"
+                                BackgroundColor="#3498db"
+                                TextColor="White"
+                                CornerRadius="10"
+                                WidthRequest="100"/>
+
+                        <Button Text="Term 2"
+                                Command="{Binding ChangeTermCommand}"
+                                CommandParameter="Term 2"
+                                BackgroundColor="#27ae60"
+                                TextColor="White"
+                                CornerRadius="10"
+                                WidthRequest="100"/>
+
+                        <Button Text="Term 3 (Current)"
+                                Command="{Binding ChangeTermCommand}"
+                                CommandParameter="Term 3 (Current)"
+                                BackgroundColor="#f39c12"
+                                TextColor="White"
+                                CornerRadius="10"
+                                WidthRequest="140"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- ปุ่มเพิ่ม/ลดวิชาเรียน -->
+            <Frame CornerRadius="15"
+                   Padding="15"
+                   BackgroundColor="White"
+                   HasShadow="True">
+                <VerticalStackLayout>
+                    <Button Text="📝 เพิ่ม/ลดวิชาเรียน"
+                            Command="{Binding NavigateToManageCoursesCommand}"
+                            BackgroundColor="#9b59b6"
+                            TextColor="White"
+                            CornerRadius="10"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Fill"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- รายวิชาในเทอมที่เลือก -->
+            <Frame CornerRadius="15"
+                   Padding="15"
+                   BackgroundColor="White"
+                   HasShadow="True">
+                <VerticalStackLayout>
+                    <Label Text="{Binding SelectedTerm, StringFormat='📚 {0} Courses'}"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#333"
+                           HorizontalOptions="Center"/>
+
+                    <CollectionView ItemsSource="{Binding CurrentCourses}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="model:Course">
+                                <VerticalStackLayout Padding="10"
+                                                     Spacing="8">
+                                    <Label Text="{Binding CourseId, StringFormat='🆔 {0}'}"
+                                           FontSize="16"
+                                           FontAttributes="Bold"
+                                           TextColor="#2c3e50"/>
+                                    <Label Text="{Binding CourseName, StringFormat='📖 {0}'}"
+                                           FontSize="16"
+                                           TextColor="#2c3e50"/>
+                                </VerticalStackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

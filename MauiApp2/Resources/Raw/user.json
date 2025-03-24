@@ -1,0 +1,280 @@
+[
+  {
+    "uid": "1",
+    "email": "65011212061@msu.ac.th",
+    "password": "1234",
+    "profile": {
+      "name": "Thawat Phamorn",
+      "studentId":"65011212061",
+      "faculty": "IT",
+      "department": "Computer Sci",
+      "year": 3
+    },
+    "current_term_registration": [
+      {
+        "course_id": "CS101",
+        "course_name": "Introduction to Computer Science"
+      },
+      {
+        "course_id": "MATH101",
+        "course_name": "Calculus I"
+      }
+    ],
+    "previous_terms_registration": [
+      {
+        "term": "1/2023",
+        "courses": [
+          {
+            "course_id": "PHY101",
+            "course_name": "General Physics"
+          },
+          {
+            "course_id": "ENG101",
+            "course_name": "English for Communication"
+          },
+          {
+            "course_id": "MATH101",
+            "course_name": "Calculus I"
+          },
+          {
+            "course_id": "CS101",
+            "course_name": "Introduction to Computer Science"
+          },
+          {
+            "course_id": "CHEM101",
+            "course_name": "General Chemistry"
+          },
+          {
+            "course_id": "HIST101",
+            "course_name": "World History"
+          },
+          {
+            "course_id": "PHIL101",
+            "course_name": "Introduction to Philosophy"
+          }
+        ]
+      },
+      {
+        "term": "2/2023",
+        "courses": [
+          {
+            "course_id": "CS102",
+            "course_name": "Data Structures"
+          },
+          {
+            "course_id": "MATH102",
+            "course_name": "Calculus II"
+          },
+          {
+            "course_id": "PHY102",
+            "course_name": "Advanced Physics"
+          },
+          {
+            "course_id": "ENG102",
+            "course_name": "Academic Writing"
+          },
+          {
+            "course_id": "STAT101",
+            "course_name": "Statistics"
+          },
+          {
+            "course_id": "PSY101",
+            "course_name": "Introduction to Psychology"
+          },
+          {
+            "course_id": "ECON101",
+            "course_name": "Microeconomics"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "2",
+    "email": "ad2",
+    "password": "2",
+    "profile": {
+      "name": "Jane Smith",
+      "studentId":"65011212031",
+      "faculty": "Science",
+      "department": "Mathematics",
+      "year": 2
+    },
+    "current_term_registration": [
+      {
+        "course_id": "MATH201",
+        "course_name": "Linear Algebra"
+      },
+      {
+        "course_id": "STAT101",
+        "course_name": "Statistics"
+      }
+    ],
+    "previous_terms_registration": [
+      {
+        "term": "1/2023",
+        "courses": [
+          {
+            "course_id": "CS201",
+            "course_name": "Algorithms and Complexity"
+          },
+          {
+            "course_id": "MATH201",
+            "course_name": "Linear Algebra"
+          },
+          {
+            "course_id": "CS202",
+            "course_name": "Database Systems"
+          },
+          {
+            "course_id": "ENG201",
+            "course_name": "Technical Writing"
+          },
+          {
+            "course_id": "SOC101",
+            "course_name": "Introduction to Sociology"
+          },
+          {
+            "course_id": "BIOL101",
+            "course_name": "Biology Basics"
+          },
+          {
+            "course_id": "LAW101",
+            "course_name": "Fundamentals of Law"
+          }
+        ]
+      },
+      {
+        "term": "2/2023",
+        "courses": [
+          {
+            "course_id": "CS203",
+            "course_name": "Operating Systems"
+          },
+          {
+            "course_id": "CS204",
+            "course_name": "Computer Networks"
+          },
+          {
+            "course_id": "MATH202",
+            "course_name": "Discrete Mathematics"
+          },
+          {
+            "course_id": "ENG202",
+            "course_name": "Public Speaking"
+          },
+          {
+            "course_id": "HIST202",
+            "course_name": "Modern History"
+          },
+          {
+            "course_id": "PHIL202",
+            "course_name": "Ethics and Morality"
+          },
+          {
+            "course_id": "BUS101",
+            "course_name": "Principles of Business"
+          },
+          {
+            "course_id": "ART101",
+            "course_name": "Introduction to Fine Arts"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "3",
+    "email": "ad3",
+    "password": "3",
+    "profile": {
+      "name": "Alice Johnson",
+      "studentId":"65011212011",
+      "faculty": "Arts",
+      "department": "English Literature",
+      "year": 4
+    },
+    "current_term_registration": [
+      {
+        "course_id": "ENG201",
+        "course_name": "Advanced Writing"
+      },
+      {
+        "course_id": "HIST101",
+        "course_name": "World History"
+      }
+    ],
+    "previous_terms_registration": [
+      {
+        "term": "1/2023",
+        "courses": [
+          {
+            "course_id": "CS201",
+            "course_name": "Algorithms and Complexity"
+          },
+          {
+            "course_id": "MATH201",
+            "course_name": "Linear Algebra"
+          },
+          {
+            "course_id": "CS202",
+            "course_name": "Database Systems"
+          },
+          {
+            "course_id": "ENG201",
+            "course_name": "Technical Writing"
+          },
+          {
+            "course_id": "SOC101",
+            "course_name": "Introduction to Sociology"
+          },
+          {
+            "course_id": "BIOL101",
+            "course_name": "Biology Basics"
+          },
+          {
+            "course_id": "LAW101",
+            "course_name": "Fundamentals of Law"
+          }
+        ]
+      },
+      {
+        "term": "2/2023",
+        "courses": [
+          {
+            "course_id": "CS203",
+            "course_name": "Operating Systems"
+          },
+          {
+            "course_id": "CS204",
+            "course_name": "Computer Networks"
+          },
+          {
+            "course_id": "MATH202",
+            "course_name": "Discrete Mathematics"
+          },
+          {
+            "course_id": "ENG202",
+            "course_name": "Public Speaking"
+          },
+          {
+            "course_id": "HIST202",
+            "course_name": "Modern History"
+          },
+          {
+            "course_id": "PHIL202",
+            "course_name": "Ethics and Morality"
+          },
+          {
+            "course_id": "BUS101",
+            "course_name": "Principles of Business"
+          },
+          {
+            "course_id": "ART101",
+            "course_name": "Introduction to Fine Arts"
+          }
+        ]
+      }
+    ]
+  }
+]

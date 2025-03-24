@@ -1,0 +1,88 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Page.ProfilePage"
+             xmlns:viewmodel="clr-namespace:MauiApp2.ViewModel"
+             xmlns:model="clr-namespace:MauiApp2.Model"
+             x:DataType="viewmodel:HomeViewModel"
+             Shell.NavBarIsVisible="False"
+             Title="Profile"
+             BackgroundColor="#2C2C2C"> <!-- Background สีดำ -->
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- ข้อมูลโปรไฟล์ -->
+            <Label Text="👤 Profile Information"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+
+            <!-- ข้อมูลโปรไฟล์ -->
+            <Frame CornerRadius="15" Padding="20" BackgroundColor="#1F1F1F">
+                <VerticalStackLayout Spacing="15">
+
+                    <!-- Name -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Name:"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                        <Label Text="{Binding CurrentUser.Profile.Name}"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <!-- Faculty -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Faculty:"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                        <Label Text="{Binding CurrentUser.Profile.Faculty}"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <!-- Department -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Department:"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                        <Label Text="{Binding CurrentUser.Profile.Department}"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <!-- Year -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Year:"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                        <Label Text="{Binding CurrentUser.Profile.Year}"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <!-- Student ID -->
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Student ID:"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                        <Label Text="{Binding CurrentUser.Profile.StudentId}"
+                               FontSize="18"
+                               TextColor="White"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
