@@ -54,6 +54,13 @@
                                             <Label Text="{Binding CourseName, StringFormat='📖 {0}'}"
                                                    FontSize="16"
                                                    TextColor="White"/>
+                                            <!-- เพิ่ม credits และ grade -->
+                                            <HorizontalStackLayout Spacing="10">
+                                                <Label Text="{Binding Credits, StringFormat='🎯 หน่วยกิต: {0}'}"
+                                                       FontSize="14"
+                                                       TextColor="#bdc3c7"/>
+                                                
+                                            </HorizontalStackLayout>
                                         </VerticalStackLayout>
                                         <Button Text="−"
                                                 Grid.Column="1"
@@ -115,6 +122,13 @@
                                             <Label Text="{Binding CourseName, StringFormat='📖 {0}'}"
                                                    FontSize="16"
                                                    TextColor="White"/>
+                                            <!-- เพิ่ม credits และ grade -->
+                                            <HorizontalStackLayout Spacing="10">
+                                                <Label Text="{Binding Credits, StringFormat='🎯 หน่วยกิต: {0}'}"
+                                                       FontSize="14"
+                                                       TextColor="#bdc3c7"/>
+                                                
+                                            </HorizontalStackLayout>
                                         </VerticalStackLayout>
                                         <Button Text="+"
                                                 Grid.Column="1"

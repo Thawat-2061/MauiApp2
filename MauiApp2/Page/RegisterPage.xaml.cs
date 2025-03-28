@@ -1,9 +1,17 @@
-namespace MauiApp2.Page;
+using Microsoft.Maui.Controls;
 
-public partial class RegisterPage : ContentPage
+namespace MauiApp2.Page
 {
-	public RegisterPage()
-	{
-		InitializeComponent();
-	}
+    public partial class RegisterPage : ContentPage
+    {
+        public RegisterPage()
+        {
+            InitializeComponent();
+        }
+
+        private async void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("..");
+        }
+    }
 }

@@ -60,7 +60,7 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[9.0.14, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

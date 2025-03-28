@@ -1,12 +1,87 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.Page.RegisterPage"
-             Title="RegisterPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Register"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- หัวข้อหน้า -->
+            <Label Text="User Accounts"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#333333"
+                   HorizontalOptions="Center"/>
+
+            <!-- User 1 -->
+            <Frame CornerRadius="10" 
+                   BackgroundColor="#FFFFFF"
+                   Padding="15"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="UID: 1"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#4285F4"/>
+                    <Label Text="Name: Thawat Phamorn"
+                           FontSize="14"/>
+                    <Label Text="Email: 65011212061@msu.ac.th"
+                           FontSize="14"/>
+                    <Label Text="Password: 1234"
+                           FontSize="14"
+                           TextColor="#EA4335"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- User 2 -->
+            <Frame CornerRadius="10" 
+                   BackgroundColor="#FFFFFF"
+                   Padding="15"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="UID: 2"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#4285F4"/>
+                    <Label Text="Name: Jane Smith"
+                           FontSize="14"/>
+                    <Label Text="Email: user2"
+                           FontSize="14"/>
+                    <Label Text="Password: 2"
+                           FontSize="14"
+                           TextColor="#EA4335"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- User 3 -->
+            <Frame CornerRadius="10" 
+                   BackgroundColor="#FFFFFF"
+                   Padding="15"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="UID: 3"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#4285F4"/>
+                    <Label Text="Name: Ayanokoji Kiyotaka"
+                           FontSize="14"/>
+                    <Label Text="Email: user3"
+                           FontSize="14"/>
+                    <Label Text="Password: 3"
+                           FontSize="14"
+                           TextColor="#EA4335"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- ปุ่มกลับ -->
+            <Button Text="Back to Login"
+                    BackgroundColor="#4285F4"
+                    TextColor="White"
+                    CornerRadius="5"
+                    Margin="0,20,0,0"
+                    Clicked="OnBackButtonClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

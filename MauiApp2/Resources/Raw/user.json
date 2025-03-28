@@ -5,19 +5,23 @@
     "password": "1234",
     "profile": {
       "name": "Thawat Phamorn",
-      "studentId":"65011212061",
+      "studentId": "65011212061",
       "faculty": "IT",
       "department": "Computer Sci",
       "year": 3
     },
     "current_term_registration": [
       {
-        "course_id": "CS101",
-        "course_name": "Introduction to Computer Science"
+        "course_id": "1204333",
+        "course_name": "Introduction to Computer Science",
+        "credits": 3,
+        "grade": ""
       },
       {
-        "course_id": "MATH101",
-        "course_name": "Calculus I"
+        "course_id": "1204999",
+        "course_name": "Calculus I",
+        "credits": 3,
+        "grade": ""
       }
     ],
     "previous_terms_registration": [
@@ -25,32 +29,28 @@
         "term": "1/2023",
         "courses": [
           {
-            "course_id": "PHY101",
-            "course_name": "General Physics"
+            "course_id": "1204103",
+            "course_name": "Algorithm and Problem Solving",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "ENG101",
-            "course_name": "English for Communication"
+            "course_id": "1204102",
+            "course_name": "Computer Systems Design and Architecture",
+            "credits": 3,
+            "grade": "B+"
           },
           {
-            "course_id": "MATH101",
-            "course_name": "Calculus I"
+            "course_id": "1204101",
+            "course_name": "Mathematics for Computer Science I",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "CS101",
-            "course_name": "Introduction to Computer Science"
-          },
-          {
-            "course_id": "CHEM101",
-            "course_name": "General Chemistry"
-          },
-          {
-            "course_id": "HIST101",
-            "course_name": "World History"
-          },
-          {
-            "course_id": "PHIL101",
-            "course_name": "Introduction to Philosophy"
+            "course_id": "1204108",
+            "course_name": "Data Communication Systems and Computer Networks",
+            "credits": 3,
+            "grade": "B"
           }
         ]
       },
@@ -58,32 +58,97 @@
         "term": "2/2023",
         "courses": [
           {
-            "course_id": "CS102",
-            "course_name": "Data Structures"
+            "course_id": "1204204",
+            "course_name": "Web Development and Management",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "MATH102",
-            "course_name": "Calculus II"
+            "course_id": "1204209",
+            "course_name": "Human-Computer Interaction (HCI)",
+            "credits": 2,
+            "grade": "B+"
           },
           {
-            "course_id": "PHY102",
-            "course_name": "Advanced Physics"
+            "course_id": "1204203",
+            "course_name": "Object-Oriented Programming (OOP)",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "ENG102",
-            "course_name": "Academic Writing"
+            "course_id": "1204301",
+            "course_name": "Database Systems",
+            "credits": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "3/2023",
+        "courses": [
+          {
+            "course_id": "1204302",
+            "course_name": "Software Engineering",
+            "credits": 3,
+            "grade": "B+"
           },
           {
-            "course_id": "STAT101",
-            "course_name": "Statistics"
+            "course_id": "1204303",
+            "course_name": "Operating Systems",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "PSY101",
-            "course_name": "Introduction to Psychology"
+            "course_id": "1204304",
+            "course_name": "Computer Graphics",
+            "credits": 3,
+            "grade": "B"
+          }
+        ]
+      },
+      {
+        "term": "1/2024",
+        "courses": [
+          {
+            "course_id": "1204401",
+            "course_name": "Machine Learning",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "ECON101",
-            "course_name": "Microeconomics"
+            "course_id": "1204402",
+            "course_name": "Cybersecurity",
+            "credits": 3,
+            "grade": "B"
+          },
+          {
+            "course_id": "1204403",
+            "course_name": "Cloud Computing",
+            "credits": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "2/2024",
+        "courses": [
+          {
+            "course_id": "1204501",
+            "course_name": "Big Data Analytics",
+            "credits": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "1204502",
+            "course_name": "Blockchain Technology",
+            "credits": 3,
+            "grade": "B+"
+          },
+          {
+            "course_id": "1204503",
+            "course_name": "Computer Vision",
+            "credits": 3,
+            "grade": "A"
           }
         ]
       }
@@ -91,23 +156,27 @@
   },
   {
     "uid": "2",
-    "email": "ad2",
+    "email": "user2",
     "password": "2",
     "profile": {
       "name": "Jane Smith",
-      "studentId":"65011212031",
+      "studentId": "65011212031",
       "faculty": "Science",
       "department": "Mathematics",
       "year": 2
     },
     "current_term_registration": [
       {
-        "course_id": "MATH201",
-        "course_name": "Linear Algebra"
+        "course_id": "1204333",
+        "course_name": "Introduction to Computer Science",
+        "credits": 3,
+        "grade": ""
       },
       {
-        "course_id": "STAT101",
-        "course_name": "Statistics"
+        "course_id": "1204999",
+        "course_name": "Calculus I",
+        "credits": 3,
+        "grade": ""
       }
     ],
     "previous_terms_registration": [
@@ -115,32 +184,28 @@
         "term": "1/2023",
         "courses": [
           {
-            "course_id": "CS201",
-            "course_name": "Algorithms and Complexity"
+            "course_id": "1204103",
+            "course_name": "Algorithm and Problem Solving",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "MATH201",
-            "course_name": "Linear Algebra"
+            "course_id": "1204102",
+            "course_name": "Computer Systems Design and Architecture",
+            "credits": 3,
+            "grade": "B+"
           },
           {
-            "course_id": "CS202",
-            "course_name": "Database Systems"
+            "course_id": "1204101",
+            "course_name": "Mathematics for Computer Science I",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "ENG201",
-            "course_name": "Technical Writing"
-          },
-          {
-            "course_id": "SOC101",
-            "course_name": "Introduction to Sociology"
-          },
-          {
-            "course_id": "BIOL101",
-            "course_name": "Biology Basics"
-          },
-          {
-            "course_id": "LAW101",
-            "course_name": "Fundamentals of Law"
+            "course_id": "1204108",
+            "course_name": "Data Communication Systems and Computer Networks",
+            "credits": 3,
+            "grade": "B"
           }
         ]
       },
@@ -148,36 +213,97 @@
         "term": "2/2023",
         "courses": [
           {
-            "course_id": "CS203",
-            "course_name": "Operating Systems"
+            "course_id": "1204204",
+            "course_name": "Web Development and Management",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "CS204",
-            "course_name": "Computer Networks"
+            "course_id": "1204209",
+            "course_name": "Human-Computer Interaction (HCI)",
+            "credits": 2,
+            "grade": "B+"
           },
           {
-            "course_id": "MATH202",
-            "course_name": "Discrete Mathematics"
+            "course_id": "1204203",
+            "course_name": "Object-Oriented Programming (OOP)",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "ENG202",
-            "course_name": "Public Speaking"
+            "course_id": "1204301",
+            "course_name": "Database Systems",
+            "credits": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "3/2023",
+        "courses": [
+          {
+            "course_id": "1204302",
+            "course_name": "Software Engineering",
+            "credits": 3,
+            "grade": "B+"
           },
           {
-            "course_id": "HIST202",
-            "course_name": "Modern History"
+            "course_id": "1204303",
+            "course_name": "Operating Systems",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "PHIL202",
-            "course_name": "Ethics and Morality"
+            "course_id": "1204304",
+            "course_name": "Computer Graphics",
+            "credits": 3,
+            "grade": "B"
+          }
+        ]
+      },
+      {
+        "term": "1/2024",
+        "courses": [
+          {
+            "course_id": "1204401",
+            "course_name": "Machine Learning",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "BUS101",
-            "course_name": "Principles of Business"
+            "course_id": "1204402",
+            "course_name": "Cybersecurity",
+            "credits": 3,
+            "grade": "B"
           },
           {
-            "course_id": "ART101",
-            "course_name": "Introduction to Fine Arts"
+            "course_id": "1204403",
+            "course_name": "Cloud Computing",
+            "credits": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "2/2024",
+        "courses": [
+          {
+            "course_id": "1204501",
+            "course_name": "Big Data Analytics",
+            "credits": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "1204502",
+            "course_name": "Blockchain Technology",
+            "credits": 3,
+            "grade": "B+"
+          },
+          {
+            "course_id": "1204503",
+            "course_name": "Computer Vision",
+            "credits": 3,
+            "grade": "A"
           }
         ]
       }
@@ -185,23 +311,27 @@
   },
   {
     "uid": "3",
-    "email": "ad3",
+    "email": "user3",
     "password": "3",
     "profile": {
-      "name": "Alice Johnson",
-      "studentId":"65011212011",
+      "name": "Ayanokoji Kiyotaka",
+      "studentId": "65011212011",
       "faculty": "Arts",
       "department": "English Literature",
       "year": 4
     },
     "current_term_registration": [
       {
-        "course_id": "ENG201",
-        "course_name": "Advanced Writing"
+        "course_id": "1204333",
+        "course_name": "Introduction to Computer Science",
+        "credits": 3,
+        "grade": ""
       },
       {
-        "course_id": "HIST101",
-        "course_name": "World History"
+        "course_id": "1204999",
+        "course_name": "Calculus I",
+        "credits": 3,
+        "grade": ""
       }
     ],
     "previous_terms_registration": [
@@ -209,32 +339,28 @@
         "term": "1/2023",
         "courses": [
           {
-            "course_id": "CS201",
-            "course_name": "Algorithms and Complexity"
+            "course_id": "1204103",
+            "course_name": "Algorithm and Problem Solving",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "MATH201",
-            "course_name": "Linear Algebra"
+            "course_id": "1204102",
+            "course_name": "Computer Systems Design and Architecture",
+            "credits": 3,
+            "grade": "B+"
           },
           {
-            "course_id": "CS202",
-            "course_name": "Database Systems"
+            "course_id": "1204101",
+            "course_name": "Mathematics for Computer Science I",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "ENG201",
-            "course_name": "Technical Writing"
-          },
-          {
-            "course_id": "SOC101",
-            "course_name": "Introduction to Sociology"
-          },
-          {
-            "course_id": "BIOL101",
-            "course_name": "Biology Basics"
-          },
-          {
-            "course_id": "LAW101",
-            "course_name": "Fundamentals of Law"
+            "course_id": "1204108",
+            "course_name": "Data Communication Systems and Computer Networks",
+            "credits": 3,
+            "grade": "B"
           }
         ]
       },
@@ -242,36 +368,97 @@
         "term": "2/2023",
         "courses": [
           {
-            "course_id": "CS203",
-            "course_name": "Operating Systems"
+            "course_id": "1204204",
+            "course_name": "Web Development and Management",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "CS204",
-            "course_name": "Computer Networks"
+            "course_id": "1204209",
+            "course_name": "Human-Computer Interaction (HCI)",
+            "credits": 2,
+            "grade": "B+"
           },
           {
-            "course_id": "MATH202",
-            "course_name": "Discrete Mathematics"
+            "course_id": "1204203",
+            "course_name": "Object-Oriented Programming (OOP)",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "ENG202",
-            "course_name": "Public Speaking"
+            "course_id": "1204301",
+            "course_name": "Database Systems",
+            "credits": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "3/2023",
+        "courses": [
+          {
+            "course_id": "1204302",
+            "course_name": "Software Engineering",
+            "credits": 3,
+            "grade": "B+"
           },
           {
-            "course_id": "HIST202",
-            "course_name": "Modern History"
+            "course_id": "1204303",
+            "course_name": "Operating Systems",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "PHIL202",
-            "course_name": "Ethics and Morality"
+            "course_id": "1204304",
+            "course_name": "Computer Graphics",
+            "credits": 3,
+            "grade": "B"
+          }
+        ]
+      },
+      {
+        "term": "1/2024",
+        "courses": [
+          {
+            "course_id": "1204401",
+            "course_name": "Machine Learning",
+            "credits": 3,
+            "grade": "A"
           },
           {
-            "course_id": "BUS101",
-            "course_name": "Principles of Business"
+            "course_id": "1204402",
+            "course_name": "Cybersecurity",
+            "credits": 3,
+            "grade": "B"
           },
           {
-            "course_id": "ART101",
-            "course_name": "Introduction to Fine Arts"
+            "course_id": "1204403",
+            "course_name": "Cloud Computing",
+            "credits": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "2/2024",
+        "courses": [
+          {
+            "course_id": "1204501",
+            "course_name": "Big Data Analytics",
+            "credits": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "1204502",
+            "course_name": "Blockchain Technology",
+            "credits": 3,
+            "grade": "B+"
+          },
+          {
+            "course_id": "1204503",
+            "course_name": "Computer Vision",
+            "credits": 3,
+            "grade": "A"
           }
         ]
       }

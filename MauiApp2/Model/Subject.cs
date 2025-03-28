@@ -22,6 +22,11 @@ namespace MauiApp1.Model
 
         [JsonProperty("course_name")]
         public string CourseName { get; set; }
+        [JsonProperty("credits")]
+    public int Credits { get; set; }
+    
+    [JsonProperty("grade")]
+    public string Grade { get; set; }
     }
 
     public partial class User

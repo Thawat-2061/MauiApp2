@@ -121,34 +121,42 @@
 
             <!-- รายวิชาในเทอมที่เลือก -->
             <Frame CornerRadius="15"
-                   Padding="15"
-                   BackgroundColor="White"
-                   HasShadow="True">
-                <VerticalStackLayout>
-                    <Label Text="{Binding SelectedTerm, StringFormat='📚 {0} Courses'}"
-                           FontSize="22"
-                           FontAttributes="Bold"
-                           TextColor="#333"
-                           HorizontalOptions="Center"/>
+       Padding="15"
+       BackgroundColor="White"
+       HasShadow="True">
+    <VerticalStackLayout>
+        <Label Text="{Binding SelectedTerm, StringFormat='📚 {0} Courses'}"
+               FontSize="22"
+               FontAttributes="Bold"
+               TextColor="#333"
+               HorizontalOptions="Center"/>
 
-                    <CollectionView ItemsSource="{Binding CurrentCourses}">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate x:DataType="model:Course">
-                                <VerticalStackLayout Padding="10"
-                                                     Spacing="8">
-                                    <Label Text="{Binding CourseId, StringFormat='🆔 {0}'}"
-                                           FontSize="16"
-                                           FontAttributes="Bold"
-                                           TextColor="#2c3e50"/>
-                                    <Label Text="{Binding CourseName, StringFormat='📖 {0}'}"
-                                           FontSize="16"
-                                           TextColor="#2c3e50"/>
-                                </VerticalStackLayout>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-                </VerticalStackLayout>
-            </Frame>
+        <CollectionView ItemsSource="{Binding CurrentCourses}">
+    <CollectionView.ItemTemplate>
+        <DataTemplate x:DataType="model:Course">
+            <VerticalStackLayout Padding="10" Spacing="8">
+                <Label Text="{Binding CourseId, StringFormat='🆔 {0}'}"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="#2c3e50"/>
+                <Label Text="{Binding CourseName, StringFormat='📖 {0}'}"
+                       FontSize="16"
+                       TextColor="#2c3e50"/>
+                <!-- แสดง Credits และ Grade พร้อม FallbackValue -->
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="{Binding Credits, StringFormat='🎯 หน่วยกิต: {0}', FallbackValue='🎯 หน่วยกิต: N/A'}"
+                           FontSize="14"
+                           TextColor="#555"/>
+                    <Label Text="{Binding Grade, StringFormat='📊 เกรด: {0}', FallbackValue='📊 เกรด: -'}"
+                           FontSize="14"
+                           TextColor="#555"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+</CollectionView>
+    </VerticalStackLayout>
+</Frame>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -22,6 +22,8 @@ namespace MauiApp2.ViewModel
         [ObservableProperty]
         private bool isBusy = false;
 
+        public bool IsNotBusy => !IsBusy; // เพิ่ม property นี้เพื่อแก้ปัญหา binding
+
         [RelayCommand]
         async Task Login()
         {
@@ -40,7 +42,6 @@ namespace MauiApp2.ViewModel
                 if (users == null || !users.Any())
                 {
                     await Shell.Current.DisplayAlert("Error", "No user data found.", "OK");
-                    IsBusy = false;
                     return;
                 }
 
@@ -48,11 +49,8 @@ namespace MauiApp2.ViewModel
 
                 if (user != null)
                 {
-                    // เก็บข้อมูลผู้ใช้ที่ล็อกอินสำเร็จ
                     AppData.CurrentUser = user;
-
-                    // ไปยังหน้า HomePage
-                    await Shell.Current.GoToAsync($"{nameof(HomePage)}?uid={user.Uid}");
+                     await Shell.Current.GoToAsync($"{nameof(HomePage)}?uid={user.Uid}");
                 }
                 else
                 {
@@ -70,27 +68,40 @@ namespace MauiApp2.ViewModel
         }
 
         private async Task<List<User>> ReadJsonAsync()
-{
-    try
-    {
-        using var stream = await FileSystem.OpenAppPackageFileAsync("user.json");
-        using var reader = new StreamReader(stream);
-        var contents = await reader.ReadToEndAsync();
-        var users = JsonConvert.DeserializeObject<List<User>>(contents);
-        return users ?? new List<User>();
-    }
-    catch (Exception ex)
-    {
-        Debug.WriteLine($"Error reading JSON: {ex.Message}");
-        await Shell.Current.DisplayAlert("Error", "Unable to load user data. Please try again later.", "OK");
-        return new List<User>();
-    }
-}
+        {
+            try
+            {
+                using var stream = await FileSystem.OpenAppPackageFileAsync("user.json");
+                using var reader = new StreamReader(stream);
+                var contents = await reader.ReadToEndAsync();
+                var users = JsonConvert.DeserializeObject<List<User>>(contents);
+                return users ?? new List<User>();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error reading JSON: {ex.Message}");
+                await Shell.Current.DisplayAlert("Error", "Unable to load user data. Please try again later.", "OK");
+                return new List<User>();
+            }
+        }
+
+        [RelayCommand]
+        async Task ForgotPassword() // เพิ่ม command นี้เพื่อแก้ปัญหา binding
+        {
+            await Shell.Current.DisplayAlert("Forgot Password", "Please contact administrator.", "OK");
+        }
 
         [RelayCommand]
         async Task Register()
         {
-            await Shell.Current.GoToAsync(nameof(RegisterPage));
+            try 
+            {
+                await Shell.Current.GoToAsync(nameof(RegisterPage)); // แก้เป็น absolute route
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Navigation Error", ex.Message, "OK");
+            }
         }
     }
 }

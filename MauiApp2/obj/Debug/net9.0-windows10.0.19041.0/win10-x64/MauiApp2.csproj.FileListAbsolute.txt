@@ -477,3 +477,10 @@ C:\dotNETClass\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\
 C:\dotNETClass\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Compatibility.dll
 C:\dotNETClass\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\System.Speech.dll
 C:\dotNETClass\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\subject.json
+C:\dotNETClass\MauiApp2\MauiApp2\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MauiApp2.sourcelink.json
+C:\dotNETClass\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\bg.scale-100.avif
+C:\dotNETClass\MauiApp2\MauiApp2\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\bg.scale-100.avif
+C:\dotNETClass\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\login.scale-100.png
+C:\dotNETClass\MauiApp2\MauiApp2\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-100.png
+C:\dotNETClass\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\pro.scale-100.jpg
+C:\dotNETClass\MauiApp2\MauiApp2\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pro.scale-100.jpg

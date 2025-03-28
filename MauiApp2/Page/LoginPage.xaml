@@ -5,130 +5,111 @@
              x:DataType="viewmodel:LoginViewModel"
              x:Class="MauiApp2.Page.LoginPage"
              Shell.NavBarIsVisible="False"
-             BackgroundColor="#121212"
              Title="Login">
 
     <ContentPage.BindingContext>
         <viewmodel:LoginViewModel/>
     </ContentPage.BindingContext>
 
-    <ScrollView>
-        <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="CenterAndExpand">
+    <!-- Background Image -->
+    <Grid>
+        <Image Source="bg.avif"
+               Aspect="AspectFill"
+               Opacity="0.8"/>
 
-            <!-- Logo Section -->
-            <VerticalStackLayout Margin="0,60,0,30" HorizontalOptions="Center">
-                <Image Source="dotnet_bot.png"
-                       HeightRequest="100"
-                       WidthRequest="100"
-                       HorizontalOptions="Center"/>
-                <Label Text="ยินดีต้อนรับ"
-                       FontSize="34"
-                       TextColor="White"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       Margin="0,20,0,0"/>
-                <Label Text="เข้าสู่ระบบเพื่อใช้งาน"
-                       FontSize="18"
-                       TextColor="#B0B0B0"
-                       HorizontalOptions="Center"
-                       Margin="0,5,0,0"/>
+        <ScrollView>
+            <VerticalStackLayout Padding="40"
+                                 Spacing="15"
+                                 VerticalOptions="Center">
+
+                <!-- เพิ่มส่วนหัวข้อ Login สวยๆ -->
+                <VerticalStackLayout>
+                    <!-- ใช้รูป login.png แทนข้อความ -->
+                    <Image Source="login.png"
+                           HeightRequest="140"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+
+                    <!-- เส้นใต้แบบ Custom -->
+                    
+                </VerticalStackLayout>
+                <!-- Semi-transparent overlay for better readability -->
+                <Frame BackgroundColor="#FFFFFF"
+                       Opacity="0.9"
+                       CornerRadius="10"
+                       Padding="20"
+                       HasShadow="True">
+
+                    <!-- เนื้อหาที่มีอยู่เดิม... -->
+                    <VerticalStackLayout Spacing="15">
+
+                        <!-- Username Field -->
+                        <Entry Placeholder="Username"
+                               Text="{Binding Username, Mode=TwoWay}"
+                               BackgroundColor="#FAFAFA"
+                               TextColor="Black"
+                               HeightRequest="45"
+                               PlaceholderColor="#9E9E9E"/>
+
+                        <!-- Password Field -->
+                        <Entry Placeholder="Password"
+                               IsPassword="True"
+                               Text="{Binding Password, Mode=TwoWay}"
+                               BackgroundColor="#FAFAFA"
+                               TextColor="Black"
+                               HeightRequest="45"
+                               PlaceholderColor="#9E9E9E"/>
+
+                        <!-- Remember me and Forgot Password -->
+                        <Grid Margin="0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <HorizontalStackLayout Grid.Column="0"
+                                                   Spacing="8"
+                                                   VerticalOptions="Center">
+                                <CheckBox Color="#E53935"/>
+                                <Label Text="Remember me"
+                                       VerticalOptions="Center"
+                                       TextColor="#616161"
+                                       FontSize="14"/>
+                            </HorizontalStackLayout>
+
+                            <Label Grid.Column="1"
+                                   Text="Forgot Password?"
+                                   TextColor="#E53935"
+                                   FontSize="14"
+                                   HorizontalOptions="End"
+                                   VerticalOptions="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding RegisterCommand}"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Grid>
+
+                        <!-- Login Button -->
+                        <Button Text="LOGIN"
+                                Command="{Binding LoginCommand}"
+                                BackgroundColor="#E53935"
+                                TextColor="White"
+                                CornerRadius="5"
+                                HeightRequest="45"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                Margin="0,15,0,0"
+                                IsEnabled="{Binding IsNotBusy}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Activity Indicator -->
+                <ActivityIndicator IsRunning="{Binding IsBusy}"
+                                   IsVisible="{Binding IsBusy}"
+                                   Color="#E53935"
+                                   HorizontalOptions="Center"
+                                   Margin="0,15"/>
             </VerticalStackLayout>
-
-            <!-- Username Field with Border for Rounded Corners -->
-            <Border Stroke="#303030" 
-                    StrokeThickness="1"
-                    StrokeShape="RoundRectangle 12,12,12,12" 
-                    BackgroundColor="#222222" 
-                    Padding="15,10">
-                <VerticalStackLayout Spacing="10">
-                    <Label Text="ชื่อผู้ใช้"
-                           FontSize="14"
-                           TextColor="#B0B0B0"
-                           Margin="5,0"/>
-                    <Entry Placeholder="กรุณากรอกชื่อผู้ใช้"
-                           Text="{Binding Username, Mode=TwoWay}"
-                           PlaceholderColor="#B0B0B0"
-                           BackgroundColor="#333333"
-                           TextColor="White"
-                           Margin="10,0,10,5"/>
-                </VerticalStackLayout>
-            </Border>
-
-            <!-- Password Field with Border for Rounded Corners -->
-            <Border Stroke="#303030" 
-                    StrokeThickness="1"
-                    StrokeShape="RoundRectangle 12,12,12,12" 
-                    BackgroundColor="#222222" 
-                    Padding="15,10">
-                <VerticalStackLayout Spacing="10">
-                    <Label Text="รหัสผ่าน"
-                           FontSize="14"
-                           TextColor="#B0B0B0"
-                           Margin="5,0"/>
-                    <Entry Placeholder="กรุณากรอกรหัสผ่าน"
-                           IsPassword="True"
-                           Text="{Binding Password, Mode=TwoWay}"
-                           PlaceholderColor="#B0B0B0"
-                           BackgroundColor="#333333"
-                           TextColor="White"
-                           Margin="10,0,10,5"/>
-                </VerticalStackLayout>
-            </Border>
-
-            <!-- Login Button -->
-            <Button Text="เข้าสู่ระบบ"
-                    Command="{Binding LoginCommand}"
-                    BackgroundColor="#4285F4"
-                    TextColor="White"
-                    CornerRadius="25"
-                    HeightRequest="50"
-                    FontAttributes="Bold"
-                    Margin="0,20,0,0"
-                    IsEnabled="{Binding IsNotBusy}"
-                    BorderWidth="0"/>
-
-            <!-- Forgot Password Section -->
-            <Label HorizontalOptions="Center" 
-                   TextColor="#B0B0B0" 
-                   Margin="0,10,0,0">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="ลืมรหัสผ่าน? " />
-                        <Span Text="คลิกที่นี่"
-                              TextColor="#4285F4"
-                              TextDecorations="Underline"/>
-                    </FormattedString>
-                </Label.FormattedText>
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}"/>
-                </Label.GestureRecognizers>
-            </Label>
-
-            <!-- Register Section -->
-            <Label HorizontalOptions="Center" 
-                   TextColor="#B0B0B0" 
-                   Margin="0,20,0,0">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span Text="ยังไม่มีบัญชี? " />
-                        <Span Text="ลงทะเบียน"
-                              TextColor="#4285F4"
-                              FontAttributes="Bold"/>
-                    </FormattedString>
-                </Label.FormattedText>
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding RegisterCommand}"/>
-                </Label.GestureRecognizers>
-            </Label>
-
-            <!-- Activity Indicator (Loading) -->
-            <ActivityIndicator IsRunning="{Binding IsBusy}"
-                               IsVisible="{Binding IsBusy}"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center"
-                               Color="#4285F4"
-                               Margin="0,15,0,0"
-                               Scale="1.5"/>
-        </VerticalStackLayout>
-    </ScrollView>
+        </ScrollView>
+    </Grid>
 </ContentPage>

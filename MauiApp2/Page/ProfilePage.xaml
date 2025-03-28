@@ -6,38 +6,45 @@
              x:DataType="viewmodel:HomeViewModel"
              Shell.NavBarIsVisible="False"
              Title="Profile"
-             BackgroundColor="#2C2C2C"> <!-- Background สีดำ -->
+             BackgroundColor="#2C2C2C">
+
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="20">
 
-            <!-- ข้อมูลโปรไฟล์ -->
-            <Label Text="👤 Profile Information"
+            <!-- รูปโปรไฟล์ -->
+            <Frame CornerRadius="100" 
+                   HeightRequest="150" 
+                   WidthRequest="150"
+                   HorizontalOptions="Center"
+                   Padding="0"
+                   IsClippedToBounds="True"
+                   Margin="0,10,0,20">
+                <Image Source="pro.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="150"
+                       WidthRequest="150"/>
+            </Frame>
+
+            <!-- ชื่อผู้ใช้ -->
+            <Label Text="{Binding CurrentUser.Profile.Name}"
                    FontSize="24"
                    FontAttributes="Bold"
                    TextColor="White"
-                   HorizontalOptions="Center"/>
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10"/>
 
             <!-- ข้อมูลโปรไฟล์ -->
-            <Frame CornerRadius="15" Padding="20" BackgroundColor="#1F1F1F">
+            <Frame CornerRadius="15" 
+                   Padding="20" 
+                   BackgroundColor="#1F1F1F"
+                   Margin="0,0,0,20">
                 <VerticalStackLayout Spacing="15">
-
-                    <!-- Name -->
-                    <StackLayout Orientation="Horizontal" Spacing="10">
-                        <Label Text="Name:"
-                               FontSize="18"
-                               TextColor="White"
-                               VerticalOptions="Center"/>
-                        <Label Text="{Binding CurrentUser.Profile.Name}"
-                               FontSize="18"
-                               TextColor="White"
-                               VerticalOptions="Center"/>
-                    </StackLayout>
 
                     <!-- Faculty -->
                     <StackLayout Orientation="Horizontal" Spacing="10">
                         <Label Text="Faculty:"
                                FontSize="18"
-                               TextColor="White"
+                               TextColor="#A0A0A0"
                                VerticalOptions="Center"/>
                         <Label Text="{Binding CurrentUser.Profile.Faculty}"
                                FontSize="18"
@@ -49,7 +56,7 @@
                     <StackLayout Orientation="Horizontal" Spacing="10">
                         <Label Text="Department:"
                                FontSize="18"
-                               TextColor="White"
+                               TextColor="#A0A0A0"
                                VerticalOptions="Center"/>
                         <Label Text="{Binding CurrentUser.Profile.Department}"
                                FontSize="18"
@@ -61,7 +68,7 @@
                     <StackLayout Orientation="Horizontal" Spacing="10">
                         <Label Text="Year:"
                                FontSize="18"
-                               TextColor="White"
+                               TextColor="#A0A0A0"
                                VerticalOptions="Center"/>
                         <Label Text="{Binding CurrentUser.Profile.Year}"
                                FontSize="18"
@@ -73,7 +80,7 @@
                     <StackLayout Orientation="Horizontal" Spacing="10">
                         <Label Text="Student ID:"
                                FontSize="18"
-                               TextColor="White"
+                               TextColor="#A0A0A0"
                                VerticalOptions="Center"/>
                         <Label Text="{Binding CurrentUser.Profile.StudentId}"
                                FontSize="18"

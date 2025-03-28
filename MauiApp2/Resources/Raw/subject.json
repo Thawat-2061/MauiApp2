@@ -1,98 +1,62 @@
 [
-    {
-      "course_id": "CS103",
-      "course_name": "Computer Science"
-    },
-    {
-      "course_id": "MATH101",
-      "course_name": "Calculus I"
-    },
-    {
-      "course_id": "ENG101",
-      "course_name": "English for Communication"
-    },
-    {
-      "course_id": "PHIL101",
-      "course_name": "Introduction to Philosophy"
-    },
-    {
-      "course_id": "PHYS101",
-      "course_name": "Physics I"
-    },
-    {
-      "course_id": "CHEM101",
-      "course_name": "Chemistry I"
-    },
-    {
-      "course_id": "BIO101",
-      "course_name": "Biology I"
-    },
-    {
-      "course_id": "HIST101",
-      "course_name": "World History"
-    },
-    {
-      "course_id": "CS102",
-      "course_name": "Data Structures and Algorithms"
-    },
-    {
-      "course_id": "MATH102",
-      "course_name": "Calculus II"
-    },
-    {
-      "course_id": "ENG102",
-      "course_name": "Literature Analysis"
-    },
-    {
-      "course_id": "PHIL102",
-      "course_name": "Ethics"
-    },
-    {
-      "course_id": "PHYS102",
-      "course_name": "Physics II"
-    },
-    {
-      "course_id": "CHEM102",
-      "course_name": "Chemistry II"
-    },
-    {
-      "course_id": "BIO102",
-      "course_name": "Biology II"
-    },
-    {
-      "course_id": "HIST102",
-      "course_name": "Modern History"
-    },
-    {
-      "course_id": "CS201",
-      "course_name": "Object-Oriented Programming"
-    },
-    {
-      "course_id": "MATH201",
-      "course_name": "Linear Algebra"
-    },
-    {
-      "course_id": "ENG201",
-      "course_name": "Advanced Writing"
-    },
-    {
-      "course_id": "PHIL201",
-      "course_name": "Logic and Critical Thinking"
-    },
-    {
-      "course_id": "PHYS201",
-      "course_name": "Thermodynamics"
-    },
-    {
-      "course_id": "CHEM201",
-      "course_name": "Organic Chemistry"
-    },
-    {
-      "course_id": "BIO201",
-      "course_name": "Genetics"
-    },
-    {
-      "course_id": "HIST201",
-      "course_name": "European History"
-    }
-  ]
+  {
+    "course_id": "1204056",
+    "course_name": "Introduction to Computing",
+    "credits": 3,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204078",
+    "course_name": "Advanced Calculus",
+    "credits": 4,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204092",
+    "course_name": "English Communication Skills",
+    "credits": 3,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204103",
+    "course_name": "Fundamentals of Physics",
+    "credits": 4,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204125",
+    "course_name": "Principles of Biology",
+    "credits": 3,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204156",
+    "course_name": "Data Structures and Algorithms",
+    "credits": 3,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204173",
+    "course_name": "Mathematical Analysis",
+    "credits": 4,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204198",
+    "course_name": "Ethical Theories",
+    "credits": 3,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204210",
+    "course_name": "Object-Oriented Programming",
+    "credits": 3,
+    "grade": "-"
+  },
+  {
+    "course_id": "1204235",
+    "course_name": "Linear Algebra Applications",
+    "credits": 3,
+    "grade": "-"
+  }
+]
